@@ -78,6 +78,9 @@
 }
 
 .search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: var(--search-button-width);
     height: 100%;
     border-top-right-radius: var(--search-border-radius);
@@ -103,18 +106,35 @@
 
 .more-btn {
     font-size: 2rem;
-    margin-left: 28px;
+    margin-left: 8px;
     padding: 4px 8px;
     background-color: transparent;
     cursor: pointer;
 }
 
 .action-btn {
+    position: relative;
+    display: flex;
     font-size: 2.2rem;
     color: #161823;
     background-color: transparent;
-    padding: 4px 12px;
+    padding: 6px 10px 4px;
     cursor: pointer;
+}
+
+.badge {
+    position: absolute;
+    top: -2px;
+    right: 0px;
+    padding: 0px 6px;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--white);
+    font-family: 'IBM Plex Sans', TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+    background-color: var(--primary);
 }
 
 .user-avatar {

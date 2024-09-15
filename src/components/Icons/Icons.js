@@ -341,7 +341,7 @@ export const ExploreIcon = ({ width = '3.2rem', height = '3.2rem', className }) 
         className={className}
         width={width}
         height={height}
-        fill="rgba(22, 24, 35, 1)"
+        fill="currentColor"
         viewBox="0 0 48 48"
         xmlns="http://www.w3.org/2000/svg"
     >
@@ -355,7 +355,7 @@ export const FollowingIcon = ({ width = '3.2rem', height = '3.2rem', className }
         className={className}
         width={width}
         height={height}
-        fill="rgba(22, 24, 35, 1)"
+        fill="currentColor"
         viewBox="0 0 48 48"
         xmlns="http://www.w3.org/2000/svg"
     >

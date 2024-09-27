@@ -3,3 +3,72 @@
     padding: 20px 0 26px 8px;
     margin-left: -18px;
 }
+
+.inner {
+    position: fixed;
+    bottom: 0;
+    top: var(--default-layout-header-height);
+    width: inherit;
+    background-color: var(--color-background);
+    z-index: 9997;
+    overflow-y: auto;
+    padding: 20px 0 26px 8px;
+    &:not(:hover)::-webkit-scrollbar-thumb {
+        background: transparent;
+        width: 2px;
+    }
+    &:hover {
+        transition: opacity 2s ease;
+    }
+}
+
+.following-container {
+    padding: 16px 0;
+    border-top: 1px solid #e3e3e4;
+}
+
+.label {
+    padding: 0 8px 8px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.see-all {
+    margin: 8px 0 0 8px;
+    color: var(--primary);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.login-container {
+    border-top: 1px solid #e3e3e4;
+    margin-bottom: 360px;
+}
+
+.login-content {
+    padding: 16px 0 16px 0;
+    color: rgba(22, 24, 35, 0.5);
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+}
+
+//Responsive
+@media screen and (max-width: 1072px) {
+    .inner {
+        padding: 0 8px;
+    }
+    .label {
+        display: none;
+    }
+    .footer {
+        display: none;
+    }
+    .see-all {
+        display: none;
+    }
+    .inner {
+        padding: 8px 0;
+    }
+}

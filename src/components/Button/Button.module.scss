@@ -9,7 +9,7 @@
     font-weight: 700;
     font-family: var(--font-family);
     cursor: pointer;
-    background-color: var(--white);
+    background-color: var(--color-background);
     border: 1px solid transparent;
     user-select: none;
 
@@ -58,7 +58,7 @@
 }
 
 .outline {
-    color: var(--primary);
+    color: var(--primary) !important;
     border-color: currentColor;
 
     &:hover {
@@ -82,4 +82,12 @@
 .large {
     padding: 14px 16px;
     min-width: 140px;
+}
+
+//Button mode
+.mode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 24px;
 }

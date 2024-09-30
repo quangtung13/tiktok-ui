@@ -10,6 +10,8 @@ import {
     UserGroupActiveIcon,
     LiveIcon,
     LiveActiveIcon,
+    ExploreIcon,
+    ExploreActiveIcon,
 } from '~/components/Icons';
 import config from '~/config';
 import SuggestedAccounts from '~/components/SuggestedAccounts';
@@ -46,6 +48,12 @@ function Sidebar() {
                         to={config.routes.home}
                         icon={<HomeIcon />}
                         activeIcon={<HomeActiveIcon />}
+                    />
+                    <MenuItem
+                        title="Explore"
+                        to={config.routes.explore}
+                        icon={<ExploreIcon />}
+                        activeIcon={<ExploreActiveIcon />}
                     />
                     <MenuItem
                         title="Following"

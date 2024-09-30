@@ -23,13 +23,14 @@
     padding: 8px 16px;
     line-height: 1.8rem;
     font-weight: 600;
-
-    &.separate {
-        border-top: 1px solid rgba(22, 24, 35, 0.12);
-    }
+    transition: background-color ease-in-out 200ms;
 
     &:hover {
-        background-color: rgba(22, 24, 35, 0.03);
+        cursor: pointer;
+        background-color: var(--background-gray-color-03);
+    }
+    &.separate {
+        border-top: 1px solid var(--background-gray-color-12);
     }
 }
 

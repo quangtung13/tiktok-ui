@@ -1,0 +1,13 @@
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 16px;
+    align-items: center;
+    max-width: 800px;
+    height: unset;
+    width: unset;
+    transition-property: margin;
+    transition-duration: 0.3s;
+    margin-bottom: 0px;
+}

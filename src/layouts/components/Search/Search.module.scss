@@ -8,7 +8,7 @@
     height: var(--search-height);
     padding-left: 16px;
     display: flex;
-    background-color: rgba(22, 24, 35, 0.06);
+    background-color: var(--background-gray-color-06);
     border-radius: var(--search-border-radius);
     border: 1.5px solid transparent;
 
@@ -16,7 +16,7 @@
         flex: 1;
         height: 100%;
         padding-right: 40px;
-        color: var(--black);
+        color: var(--color-foreground);
         font-size: 1.6rem;
         caret-color: var(--primary);
         background-color: transparent;
@@ -24,7 +24,7 @@
     }
 
     input:not(:placeholder-shown) ~ .search-btn {
-        color: rgba(22, 24, 35, 0.75);
+        color: var(--color-foreground);
     }
 
     &::after {
@@ -37,6 +37,14 @@
         background-color: rgba(22, 24, 35, 0.12);
     }
 
+    &:hover {
+        border-color: var(--background-gray-color-20);
+    }
+    &:hover .search-btn {
+        cursor: pointer;
+        background-color: var(--background-gray-color-06) !important;
+        color: var(--color-foreground) !important;
+    }
     &:focus-within {
         border-color: rgba(22, 24, 35, 0.2);
     }
@@ -46,7 +54,7 @@
     padding: 5px 12px;
     font-size: 1.4rem;
     font-weight: 600;
-    color: rgba(22, 24, 35, 0.5);
+    color: var(--color-background);
 }
 
 .clear,
@@ -80,11 +88,12 @@
     border-top-right-radius: var(--search-border-radius);
     border-bottom-right-radius: var(--search-border-radius);
     font-size: 1.8rem;
-    color: rgba(22, 24, 35, 0.34);
+    color: var(--background-gray-color-34) !important;
+    background: none;
 
     &:hover {
         cursor: pointer;
-        background-color: rgba(22, 24, 35, 0.03);
+        // background-color: rgba(22, 24, 35, 0.03);
     }
 
     &:active {

@@ -1,0 +1,95 @@
+body {
+    --color-background: rgba(255, 255, 255);
+    --color-foreground: rgb(22, 24, 35);
+    --primary-line-height: 22px;
+    --text-primary-color: #161823;
+    --text-gray-color: rgba(22, 24, 35, 0.6);
+    --text-blue-color: #2b5db9;
+    --default-background-media: #ddd;
+    --background-disable-color: #f5f5f5;
+    --background-primary-color: rgba(254, 44, 85, 0.06);
+    --background-primary-color2: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), #fe2c55;
+    --white-color-2: #fff;
+    --white-color-3: #fff;
+    --white-color-4: #fff;
+    --background-gray-color-03: rgba(22, 24, 35, 0.03);
+    --background-gray-color-06: rgba(22, 24, 35, 0.06);
+    --background-gray-color-1: rgba(22, 24, 35, 0.1);
+    --background-gray-color-12: rgba(22, 24, 35, 0.12);
+    --background-gray-color-14: rgba(22, 24, 35, 0.14);
+    --background-gray-color-16: rgba(22, 24, 35, 0.16);
+    --background-gray-color-20: rgba(22, 24, 35, 0.2);
+    --background-gray-color-34: rgba(22, 24, 35, 0.34);
+    --background-gray-color-75: rgba(22, 24, 35, 0.75);
+    --background-gray-color-241: rgb(241, 241, 241);
+    --background-gray-color-248: rgb(248, 248, 248);
+    --background-tippy-content: #616161;
+    --background-modal-form-color: #fff;
+    --background-modal-item-color: #fff;
+    --box-shadow-popper: rgba(0, 0, 0, 0.12) 0px 2px 12px;
+    --box-shadow-popper-2: rgba(0, 0, 0, 0.12) 0px 4px 16px;
+    --box-shadow-header: 0px 1px 1px rgba(0, 0, 0, 0.12);
+    --border-color-style: #c5c6c9;
+}
+body.dark {
+    --color-background: rgb(22, 24, 35);
+    --color-foreground: rgba(255, 255, 255);
+    --text-gray-color: rgba(255, 255, 255, 0.502);
+    --text-blue-color: #8fbee9;
+    --default-background-media: #555;
+    --background-disable-color: #707070;
+    --white-color-2: hsla(0, 0%, 100%, 0.08);
+    --white-color-3: #252525;
+    --white-color-4: #2e2e2e;
+    --background-gray-color-03: rgba(255, 255, 255, 0.04);
+    --background-gray-color-06: rgba(255, 255, 255, 0.122);
+    --background-gray-color-20: rgba(255, 255, 255, 0.2);
+    --background-gray-color-34: rgba(255, 255, 255, 0.34);
+    --background-gray-color-12: hsla(0, 0%, 100%, 0.12);
+    --background-gray-color-75: hsla(0, 0%, 100%, 0.75);
+    --background-gray-color-241: rgb(37, 37, 37);
+    --background-gray-color-248: rgb(18, 18, 18);
+    --background-tippy-content: #4e4e4e;
+    --background-modal-form-color: rgb(37, 37, 37);
+    --background-modal-item-color: rgb(46, 46, 46);
+    --box-shadow-header: rgba(255, 255, 255, 0.12) 0px 1px 1px;
+    --box-shadow-popper: rgba(255, 255, 255, 0.12) 0px 2px 12px;
+    --border-color-style: transparent;
+}
+
+.input {
+    display: none;
+}
+
+.input:checked + .switch {
+    background-color: #0be09b;
+}
+.input:checked + .switch::after {
+    left: calc(100% - 2px);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.switch {
+    background-color: rgba(22, 24, 35, 0.12);
+    border-radius: 100px;
+    cursor: pointer;
+    display: inline-block;
+    height: 24px;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 44px;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        background-color: #fff;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        transition: inherit;
+    }
+}

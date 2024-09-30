@@ -22,7 +22,7 @@
 }
 .body {
     margin-top: 12px;
-    color: #161823;
+    color: var(--color-foreground);
 }
 .nickname {
     font-size: 1.8rem;
@@ -43,5 +43,5 @@
     margin-left: 20px;
 }
 .label {
-    color: #161823bf;
+    color: var(--color-foreground);
 }

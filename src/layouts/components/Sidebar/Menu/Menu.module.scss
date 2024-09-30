@@ -7,9 +7,10 @@
     border-radius: 4px;
     color: var(--text-color);
     transition: background-color ease-in-out 200ms;
+    color: var(--color-foreground);
 
     &.active {
-        color: var(--primary);
+        color: var(--primary) !important;
 
         .icon {
             display: none;
@@ -21,7 +22,7 @@
     }
 
     &:hover {
-        background-color: rgba(22, 24, 35, 0.03);
+        background-color: var(--background-gray-color-03);
     }
 }
 
